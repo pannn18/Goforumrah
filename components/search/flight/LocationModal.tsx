@@ -17,7 +17,7 @@ const popularPlaces = [
   { name: "Al Ula, Saudi Arabia", airport: "Al Ula" },
 ];
 
-export default function LocationModal({ value, onPick, icon = "/img/svg/flight.svg" }: Props) {
+export default function LocationModal({ value, onPick, icon = "/img/svg/flight-icon.svg" }: Props) {
   const q = value.trim().toLowerCase();
 
   const items = popularPlaces.filter((p) => {

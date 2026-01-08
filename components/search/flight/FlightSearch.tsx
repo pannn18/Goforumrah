@@ -160,7 +160,7 @@ export default function FlightSearch() {
                   setFromText(val);
                   setOpenFrom(false);
                 }}
-                icon="/images/flight.svg"
+                icon="/images/flight-icon.svg"
               />
             )}
           </div>
@@ -197,7 +197,7 @@ export default function FlightSearch() {
                   setToText(val);
                   setOpenTo(false);
                 }}
-                icon="/images/Flight.svg"
+                icon="/images/flight-icon.svg"
               />
             )}
           </div>
