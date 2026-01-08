@@ -1,0 +1,60 @@
+.airlinePartners {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include respond(screen-sm) {
+    padding: 48px 0px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    color: $color-primary;
+  }
+
+  &__title {
+    color: $color-primary;
+  }
+
+  &__subtitle {
+    color: $color-subtle;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+
+    @include respond(screen-md) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  &__card {
+    height: 102px;
+    border: 1.5px solid $color-input;
+    border-radius: 16px;
+    background: $color-white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  &__logo {
+    max-width: 100%;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+}

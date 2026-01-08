@@ -1,0 +1,304 @@
+  .searchContainer {
+    position: absolute;
+    width: 100%;
+    top: 379px;
+
+    @include respond(screen-xl) {
+    padding: 0 24px;
+    top: 0px;
+    position: relative;
+  }
+
+
+    &__type {
+      display: flex;
+      position: absolute;
+      padding: 12px 24px;
+      background-color: $color-white;
+      border: 1px solid $color-input;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      top: -47px;
+      left: 64px;
+      gap: 24px;
+
+      @include respond(screen-xl) {
+        top: -17px;
+      }
+
+      @include respond(screen-md) {
+      position: relative;
+      top: 20px;  
+      left: 0;
+      width: 100%;
+      border-radius: 24px 24px 0 0;
+      border: 1px solid $color-input;
+      border-bottom: 1px solid $color-separator;
+      padding: 14px;
+      justify-content: space-around;
+      z-index: 50;
+      }
+
+      @include respond(screen-xs) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 35px;
+        gap: 10px;
+      }
+    }
+
+    &__typeItem {
+      @include flex-center;
+      gap: 16px;
+      cursor: pointer;
+      position: relative;
+
+      input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked + .searchContainer__typeDot {
+          border-color: $color-toscha-1;
+
+          &::after {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+        &:checked ~ span {
+          color: $color-toscha-1;
+        }
+      }
+
+      span {
+        color: $color-primary;
+        transition: $transition;
+      }
+    }
+
+    &__typeDot {
+      @include flex-center;
+      width: 20px;
+      height: 20px;
+      border: 1px solid $color-input;
+      border-radius: 50%;
+      position: relative;
+      flex-shrink: 0;
+      transition: $transition;
+
+      &:hover {
+        border: 1px solid $color-toscha-1;
+      }
+
+      &::after {
+        content: "";
+        width: 12.5px;
+        height: 12.5px;
+        background-color: $color-toscha-1;
+        border-radius: 50%;
+        opacity: 0;
+        transform: scale(0);
+        transition: $transition;
+      }
+    }
+  }
+
+  .searchBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: $color-white;
+    border-radius: 1000px;
+    border: 1px solid $color-input;
+    box-shadow: 0px 12px 44px rgba(5, 44, 71, 0.05);
+
+    padding: 12px;
+    gap: 16px;
+    z-index: 999;
+
+    @include respond(screen-xl) {
+      padding: 24px ;
+      flex-direction: column;
+      border-radius: 24px;
+      gap: 8px;
+      margin-top: 30px;
+    }
+
+     @include respond(screen-md) {
+      z-index: 1;
+      margin-top: 0px;
+     }
+
+    &__divider {
+      width: 1px;
+      height: 40px;
+      background-color: $color-input;
+
+      @include respond(screen-xl) {
+        display: none;
+      }
+    }
+
+    &__container {
+      display: flex;
+      align-items: center;
+      flex: 1 ;
+
+      @include respond(screen-xl) {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      &--flight {
+        .searchField {
+          flex: 2 1;
+          align-items: center;
+          padding-right: 8px;
+
+          &:is(:first-child) {
+            border-right: none !important;
+          }
+        }
+      }
+    }
+
+    &__swap {
+      border-radius: 100px;
+      background-color: $color-white;
+      border: 1px solid $color-light !important;
+      padding: 8px;
+      flex-shrink: 0;
+      cursor: pointer;
+      transition: $transition;
+
+      @include respond(screen-xl) {
+        position: absolute;
+        top: 78px;
+      }
+
+      @include respond(screen-md) {
+        top: 78px;
+      }
+
+      @include respond(screen-xs) {
+        top: 78px;
+      }
+    }
+
+    &__cta {
+      padding: 20px 40px;
+      background-color: $color-toscha-1;
+      color: $color-white;
+      border-radius: 1000px;
+      border: none;
+      transition: $transition;
+      cursor: pointer;
+
+      @include respond(screen-xl) {
+        width: 100%;
+      }
+
+      &:hover {
+        background-color: $color-toscha-2;
+      }
+    }
+  }
+
+  .searchField {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    min-width: 0;
+    cursor: pointer;
+
+    @include respond(screen-xl) {
+      width: 100%;  
+      border-bottom: 1px solid $color-separator;
+      padding: 24px 20px;
+      align-items: flex-start;
+    }
+
+    @include respond(screen-sm) {
+      padding: 24px 12px;
+    }
+
+    &--wide {
+      flex: 2;
+    }
+
+    &--dropdown {
+      position: relative;
+    }
+
+    &__wrapper {
+      min-width: 95%;
+      display: flex;
+      justify-content: space-between; 
+      gap: 20px;
+
+      @include respond(screen-xl) {
+        padding: 4px;
+      }
+
+      @include respond(screen-sm) {
+        padding: 4px 0;
+        gap: 10px;
+      }
+
+      &--container {
+        @include respond(screen-xl) {
+        }
+      }
+    }
+
+    &__small {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    &__icon {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      filter: brightness(0) saturate(100%) invert(62%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(92%) contrast(88%);
+    }
+
+    &__input {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      color: $color-primary;
+      width: 100%;
+    }
+
+    &__button {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      color: $color-subtle;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0;
+
+      &.is-filled {
+        color: $color-primary;
+      }
+    }
+
+    &__dot {
+      width: 5px;
+      height: 5px;
+      background-color: $color-separator;
+      border-radius: 50%;
+    }
+  }

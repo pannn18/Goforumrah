@@ -1,0 +1,91 @@
+.trendingCities {
+  max-width: 1200px;
+  padding: 140px 24px 48px 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include respond(screen-xl) {
+    padding: 440px 0 48px 0;
+  }
+
+  @include respond(screen-md) {
+    padding: 470px 0 48px 0;
+  }
+
+    @include respond(screen-xs) {
+    padding: 570px 0 48px 0;
+  }
+
+  &__header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    color: $color-primary;
+  }
+
+  &__subtitle {
+    color: $color-subtle;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+
+    @include respond(screen-md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    position: relative;
+    height: 213px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  &__image {
+    object-fit: cover;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 12px;
+    background: linear-gradient(
+      180deg,
+      rgba(5, 44, 71, 0) 0%,
+      rgba(5, 44, 71, 0.4)   40%,
+      rgba(5, 44, 71, 0.8) 80%
+    );
+    color: $color-white;
+  }
+
+  &__city {
+    color: $color-white;
+  }
+
+  &__from {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: $color-light;
+    min-width: 0;
+  }
+
+  &__icon {
+    filter: brightness(0) invert(1);
+  }
+}

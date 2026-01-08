@@ -1,0 +1,43 @@
+.homeContent {
+  max-width: 1200px;
+  margin: 0 auto;
+
+@include respond(screen-xl) {
+    padding: 0 24px;
+  }
+}
+
+.homeInfo {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &--hotel {
+    padding: 91px 0 48px 0;
+
+    @include respond(screen-xl) {
+      padding: 270px 0 48px 0;
+    }
+
+        @include respond(screen-xs) {
+      padding: 320px 0 48px 0;
+    }
+
+  }
+
+  &--transfer {
+    padding: 75px 0 48px 0;
+
+    @include respond(screen-xl) {
+      padding: 340px 0 48px 0;
+    }
+
+    @include respond(screen-md) {
+      padding: 360px 0 48px 0;
+    }
+
+    @include respond(screen-xs) {
+      padding: 460px 0 48px 0;
+    }
+  }
+}
+

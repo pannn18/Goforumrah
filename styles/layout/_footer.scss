@@ -1,0 +1,209 @@
+.footer {
+  background-color: $color-navi-1;
+
+  &__inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 96px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+
+    @include respond(screen-sm) {
+      padding: 96px 16px;
+      gap: 40px;
+    }
+  }
+
+  &__top {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 1fr;
+    gap: 40px;
+
+    @include respond(screen-lg) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @include respond(screen-sm) {
+      gap: 32px;
+    }
+  }
+
+  &__col {
+    &--newsletter {
+      max-width: 487px;
+
+      @include respond(screen-lg) {
+        grid-column: 1 / -1;
+        max-width: 100%;
+      }
+
+      @include respond(screen-sm) {
+        padding: 40px 0;
+        border-top: 1px solid $color-navi-2;
+        border-bottom: 1px solid $color-navi-2;
+        text-align: center;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 24px;
+    color: $color-white;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 120%;
+
+    @include respond(screen-sm) {
+      margin: 0 0 16px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__link {
+    color: $color-light;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    transition: $transition;
+
+    &:hover {
+      color: $color-toscha-1;
+    }
+  }
+
+  &__newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: $color-light;
+
+    @include respond(screen-sm) {
+      align-items: center;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-light;
+  }
+
+  &__form {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+
+    @include respond(screen-sm) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: $color-light;
+    border: 1px solid $color-input;
+    border-radius: 10px;
+    outline: none;
+
+    &::placeholder {
+      font-size: 14px;
+      color: $color-subtle;
+    }
+  }
+
+  &__btn {
+    padding: 17px 26px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: $color-toscha-1;
+    color: $color-white;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+
+    @include respond(screen-sm) {
+      width: 100%;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @include respond(screen-sm) {
+      flex-direction: column;
+      align-items: center;
+      gap: 34px;
+      order: -1;
+    }
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include respond(screen-sm) {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    max-width: 224px;
+    height: 40px;
+  }
+
+  &__copy {
+    margin: 0;
+    color: $color-white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  &__social {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+
+    @include respond(screen-sm) {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  &__socialBtn {
+    width: 48px;
+    height: 48px;
+    border-radius: 40px;
+    border: none;
+    background-color: $color-navi-2;
+    cursor: pointer;
+    transition: $transition;
+    display: grid;
+    place-items: center;
+
+    &:hover {
+      background-color: $color-navi-3;
+    }
+
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}

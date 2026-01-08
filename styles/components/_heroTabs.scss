@@ -1,0 +1,75 @@
+.heroTabs {
+  display: flex;
+  justify-content: center;
+
+  &__wrap {
+    background-color: $color-white;
+    border: 1px solid $color-input;
+    border-radius: 1000px;
+    padding: 8px;
+
+    display: flex;
+    gap: 16px;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+    @include respond(screen-md) {
+      gap: 0;
+    }
+  }
+
+  &__item,
+  &__item * {
+    text-decoration: none !important;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 32px;
+    border-radius: 1000px;
+
+    border: none;
+    background-color: transparent;
+
+    color: $color-primary;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover,
+    &.is-active {
+      background-color: $color-navi-1;
+      color: $color-white;
+
+      .heroTabs__icon {
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    &:not(.is-active) {
+      @include respond(screen-md) {
+        .heroTabs__label {
+          display: none;
+        }
+      }
+    }
+
+    @include respond(screen-xs) {
+      padding: 8px 16px;
+      gap: 5px;
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    transition: filter 0.3s ease;
+    filter: none;
+  }
+
+    &__label {
+      white-space: nowrap;
+    }
+}

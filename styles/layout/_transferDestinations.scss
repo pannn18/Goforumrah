@@ -1,0 +1,103 @@
+.destination {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include respond(screen-sm) {
+    padding: 48px 0px;
+  }
+
+  &__header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+
+    color: $color-primary;
+  }
+
+  &__title {
+    color: $color-primary;
+  }
+
+  &__subtitle {
+    color: $color-subtle;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+
+    @include respond(screen-md) {
+      grid-template-columns: repeat(2, minmax(0, 1fr)); // FIX
+      gap: 20px;
+    }
+
+    @include respond(screen-xs) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.destinationCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+
+    @include respond(screen-md) {
+      gap: 5px;
+    }
+
+    h5 {
+      color: $color-primary;
+
+      @include respond(screen-lg) {
+        font-size: 20px;
+      }
+
+      @include respond(screen-xs) {
+        font-size: 18px;
+        line-height: 140%;
+      }
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    color: $color-primary;
+
+    p {
+      color: $color-primary;
+
+      @include respond(screen-xs) {
+        font-size: 12px;
+        line-height: 150%;
+      }
+    }
+  }
+}

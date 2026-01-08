@@ -1,0 +1,82 @@
+.hero {
+  padding: 0;
+  position: relative;
+  overflow: visible;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include respond(screen-xl) {
+    height: 520px;
+  }
+
+  &__hotel {
+    background:
+      linear-gradient(
+        180deg,
+        rgba($color-navi-1, 0) 0%,
+        rgba($color-navi-1, 0.5) 90%
+      ),
+      url("/images/bg-hotel.png") center / cover no-repeat;
+  }
+
+  &__flight {
+    background:
+      linear-gradient(
+        180deg,
+        rgba($color-navi-1, 0) 0%,
+        rgba($color-navi-1, 0.5) 90%
+      ),
+      url("/images/bg-flights.jpg") center / cover no-repeat;
+  }
+
+  &__transfer {
+    background:
+      linear-gradient(
+        180deg,
+        rgba($color-navi-1, 0) 0%,
+        rgba($color-navi-1, 0.5) 90%
+      ),
+      url("/images/bg-car.jpg") center / cover no-repeat;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-top: 40px;
+    width: 100%;
+  }
+
+  &__title {
+    color: $color-white;
+    margin-top: 75px;
+    text-align: center;
+
+    @include respond(screen-lg) {
+            margin-top: 50px;
+        }
+  }
+
+  &__subtitle {
+    color: $color-white;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__search {
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    > * {
+      width: 100%;
+      max-width: 1200px;
+    }
+  }
+}
