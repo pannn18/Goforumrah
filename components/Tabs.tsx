@@ -22,7 +22,7 @@ export default function HeroTabs({ active, onChange }: Props) {
           onClick={() => onChange("hotel")}
           onKeyDown={(e) => e.key === "Enter" && onChange("hotel")}
         >
-          <Image src="/images/building.svg" alt="Hotel" width={24} height={24} className="heroTabs__icon" />
+          <Image src="/images/buildings.svg" alt="Hotel" width={24} height={24} className="heroTabs__icon" />
           <p className="heroTabs__label">Hotel</p>
         </div>
 
