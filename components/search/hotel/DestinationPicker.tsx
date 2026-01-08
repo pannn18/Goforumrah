@@ -35,7 +35,7 @@ export default function DestinationPanel({ query, onPick }: Props) {
         {list.length ? (
           list.map((d, idx) => (
             <button key={idx} type="button" className="dropdownItem" onClick={() => onPick(d.name)}>
-              <Image src="/images/Building.svg" alt="" width={20} height={20} />
+              <Image src="/images/buildings.svg" alt="" width={20} height={20} />
               <span className="dropdownItem__text">
                 <span className="dropdownItem__name bs bs--medium">{d.name}</span>
                 <span className="dropdownItem__area sm sm--regular">{d.area}</span>

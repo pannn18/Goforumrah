@@ -69,7 +69,7 @@ export default function HotelSearch() {
         {/* Destination */}
         <div className="searchField searchField--wide searchField--dropdown" ref={destRef}>
           <Image 
-            src="/images/Building.svg" 
+            src="/images/buildings.svg" 
             alt="Hotel" 
             width={24} 
             height={24} 
@@ -104,7 +104,7 @@ export default function HotelSearch() {
         {/* Date */}
         <div className="searchField searchField--dropdown" ref={dateRef}>
           <Image 
-            src="/images/Calendar.svg" 
+            src="/images/calender.svg" 
             alt="Calendar" 
             width={24} 
             height={24} 

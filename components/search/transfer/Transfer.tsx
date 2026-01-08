@@ -190,7 +190,7 @@ export default function TransferSearch({ onTransferTypeChange }: TransferSearchP
 
         {/* Pickup Date & Time */}
         <div className="searchField searchField--date searchField--dropdown" ref={pickupDateRef}>
-          <Image src="/images/Calendar.svg" alt="Calendar" width={24} height={24} className="searchField__icon" />
+          <Image src="/images/calender.svg" alt="Calendar" width={24} height={24} className="searchField__icon" />
           <button
             type="button"
             className={`searchField__button lg lg--regular ${pickupDate ? "is-filled" : ""}`}
@@ -220,7 +220,7 @@ export default function TransferSearch({ onTransferTypeChange }: TransferSearchP
 
         {/* Dropoff Date & Time */}
         <div className="searchField searchField--date searchField--dropdown" ref={dropoffDateRef}>
-          <Image src="/images/Calendar.svg" alt="Calendar" width={24} height={24} className="searchField__icon" />
+          <Image src="/images/calender.svg" alt="Calendar" width={24} height={24} className="searchField__icon" />
           <button
             type="button"
             className={`searchField__button lg lg--regular ${dropoffDate ? "is-filled" : ""}`}

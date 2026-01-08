@@ -57,7 +57,7 @@ export default function HeroTabs({ active, onChange }: Props) {
           title="Coming soon" 
           aria-label="Tour Package (Coming soon)"
         >
-          <Image src="/images/sunHorizon.svg" alt="Tour Package" width={24} height={24} className="heroTabs__icon" />
+          <Image src="/images/sun.svg" alt="Tour Package" width={24} height={24} className="heroTabs__icon" />
           <span className="heroTabs__label bs bs--bold ">Tour Package</span>
         </div>
       </div>

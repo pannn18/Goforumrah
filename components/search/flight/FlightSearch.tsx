@@ -160,7 +160,7 @@ export default function FlightSearch() {
                   setFromText(val);
                   setOpenFrom(false);
                 }}
-                icon="/images/flight.svg"
+                icon="/images/Flight.svg"
               />
             )}
           </div>
@@ -208,7 +208,7 @@ export default function FlightSearch() {
         {/* DEPARTURE DATE */}
         <div className="searchField searchField--dropdown" ref={dateRef}>
           <Image 
-            src="/images/Calendar.svg" 
+            src="/images/calender.svg" 
             alt="Calendar" 
             width={24} 
             height={24} 
@@ -257,7 +257,7 @@ export default function FlightSearch() {
 
             <div className="searchField searchField--dropdown" ref={returnRef}>
               <Image 
-                src="/images/Calendar.svg" 
+                src="/images/calender.svg" 
                 alt="Calendar" 
                 width={24} 
                 height={24} 
