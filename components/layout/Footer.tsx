@@ -59,7 +59,7 @@ export default function Footer() {
         <div className="footer__bottom">
           <div className="footer__brand">
             <Image
-              src="/images/Logo.svg"
+              src="/images/logo.svg"
               alt="Logo"
               width={224}
               height={40}

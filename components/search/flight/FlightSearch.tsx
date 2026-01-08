@@ -160,7 +160,7 @@ export default function FlightSearch() {
                   setFromText(val);
                   setOpenFrom(false);
                 }}
-                icon="/images/Flight.svg"
+                icon="/images/flight.svg"
               />
             )}
           </div>
@@ -287,7 +287,7 @@ export default function FlightSearch() {
           <div className="searchField__wrapper searchField__wrapper--container">
             <div className="searchField__small">
               <Image 
-                src="/images/Users.svg" 
+                src="/images/users.svg" 
                 alt="Users" 
                 width={24} 
                 height={24} 

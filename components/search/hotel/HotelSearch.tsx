@@ -137,7 +137,7 @@ export default function HotelSearch() {
         {/* Guest */}
         <div className="searchField searchField--dropdown" ref={guestRef}>
           <Image 
-            src="/images/Users.svg" 
+            src="/images/users.svg" 
             alt="Users" 
             width={24} 
             height={24} 

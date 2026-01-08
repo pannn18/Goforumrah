@@ -21,7 +21,7 @@ export default function Navbar() {
 
         <div className="navbar__item navbar__language">
           <Image
-            src="/images/Globe.svg"
+            src="/images/globe.svg"
             alt="Language"
             width={24}
             height={24}

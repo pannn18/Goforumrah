@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const cities = [
   { name: "Al-Ḥawiyah", accommodations: 120, image: "/images/al-hawiyah.png" },
-  { name: "Al-Hudā", accommodations: 132, image: "/images/al-Huda.png" },
+  { name: "Al-Hudā", accommodations: 132, image: "/images/al-huda.png" },
   { name: "Ju'rānah", accommodations: 145, image: "/images/juranah.png" },
   { name: "Makkah", accommodations: 40, image: "/images/makkah.png" },
   { name: "Mastūrah", accommodations: 26, image: "/images/masturah.png" },
