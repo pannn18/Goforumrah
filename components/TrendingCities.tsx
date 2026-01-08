@@ -41,7 +41,7 @@ export default function TrendingCities() {
               <h5 className="trendingCities__city heading-5">{city.name}</h5>
               <div className="trendingCities__from">
                 <Image 
-                  src="/images/flight.svg"
+                  src="/images/flight-icon.svg"
                   alt="Plane takeoff"
                   width={24}
                   height={24}
