@@ -21,7 +21,7 @@ export default function Navbar() {
 
         <div className="navbar__item navbar__language">
           <Image
-            src="/images/Globe.svg"
+            src="/images/Global.svg"
             alt="Language"
             width={24}
             height={24}
@@ -32,7 +32,7 @@ export default function Navbar() {
         <span className="navbar__divider"></span>
 
         <div className="navbar__item navbar__icons">
-          <Image src="/images/Heart.svg" alt="Favorite" width={24} height={24} />
+          <Image src="/images/Love.svg" alt="Favorite" width={24} height={24} />
           <Image src="/images/Bell.svg" alt="Notification" width={24} height={24} />
           <Image
             src="/images/User.svg"
