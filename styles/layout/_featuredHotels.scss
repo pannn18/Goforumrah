@@ -52,9 +52,13 @@
     position: relative;
     white-space: nowrap;
     flex-shrink: 0;
+    transition: $transition;
 
-    &.is-active {
-      color: $color-toscha-1;
+    &.is-active,
+    &:hover {
+      color: $color-toscha-2;
+      font-size: 15px;
+      font-weight: 600;
 
       &::after {
         content: "";
@@ -65,6 +69,7 @@
         height: 2px;
         background: $color-toscha-1;
         border-radius: 16px;
+        transition: $transition;
       }
     }
   }

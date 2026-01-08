@@ -124,15 +124,18 @@
   }
 
   &__btn {
-    padding: 17px 26px;
+    padding: 15px 26px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
     background: $color-toscha-1;
     color: $color-white;
-    font-size: 14px;
-    font-weight: 700;
     white-space: nowrap;
+    transition: $transition;
+
+    &:hover {
+      background: $color-toscha-2;
+    }
 
     @include respond(screen-sm) {
       width: 100%;

@@ -53,7 +53,7 @@ export default function FeaturedHotels() {
           location: "Jabal Al Kaaba, 24231 Makkah, Saudi Arabia",
           priceFrom: "$ 160.00",
           period: "night",
-          image: "/images/Sheraton.jpg",
+          image: "/images/sheraton.jpg",
         },
       ],
       "al-huda": [
@@ -69,7 +69,7 @@ export default function FeaturedHotels() {
           location: "Al Hada Center, Taif , Saudi Arabia",
           priceFrom: "$ 110.00",
           period: "night",
-          image: "/images/Ramada.jpg",
+          image: "/images/ramada.jpg",
         },
         {
           name: "Abraj Al Tayseer Tuwa Hotel",
@@ -99,7 +99,7 @@ export default function FeaturedHotels() {
           location: "Umm Al Qura Road, 21955 Makkah, Saudi Arabia",
           priceFrom: "$ 146.00",
           period: "night",
-          image: "/images/jabal.jpg",
+          image: "/images/jabalomarmarriott.jpg",
         },
         {
           name: "Millennium Makkah Al Naseem",
@@ -129,7 +129,7 @@ export default function FeaturedHotels() {
           location: "Abraj Al Bait Complex, Makkah",
           priceFrom: "$ 190.00",
           period: "night",
-          image: "/images/Pullman.jpg",
+          image: "/images/pullman.jpg",
         },
         {
           name: "Conrad Makkah Jabal Omar",
@@ -159,7 +159,7 @@ export default function FeaturedHotels() {
           location: "Corniche Road, Rabigh Area",
           priceFrom: "$ 75.00",
           period: "night",
-          image: "/images/Rabigh.jpg",
+          image: "/images/rabigh.jpg",
         },
         {
           name: "Holiday Suites Al Azizia",

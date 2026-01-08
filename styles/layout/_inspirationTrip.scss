@@ -106,10 +106,13 @@
   }
 
   &__link {
-    margin-top: auto;
     color: $color-toscha-1;
     text-decoration: none;
-    width: fit-content;
+    transition: $transition;
+
+    &:hover {
+      color: $color-toscha-2;
+    }
   }
 
   &__footer {
@@ -124,6 +127,11 @@
     gap: 6px;
     color: $color-toscha-1;
     text-decoration: none;
+    transition: $transition;
+
+    &:hover {
+      color: $color-toscha-2;
+    }
   }
 
   &__allIcon {
