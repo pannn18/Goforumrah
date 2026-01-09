@@ -180,14 +180,6 @@
         position: absolute;
         top: 78px;
       }
-
-      @include respond(screen-md) {
-        top: 78px;
-      }
-
-      @include respond(screen-xs) {
-        top: 78px;
-      }
     }
 
     &__cta {
@@ -201,6 +193,7 @@
 
       @include respond(screen-xl) {
         width: 100%;
+        margin-top: 16px;
       }
 
       &:hover {
@@ -230,7 +223,7 @@
     }
 
     &--wide {
-      flex: 2;
+      flex: 2 1;
     }
 
     &--dropdown {
@@ -238,8 +231,9 @@
     }
 
     &__wrapper {
-      min-width: 95%;
+      width: 100%;
       display: flex;
+      align-items: center;
       justify-content: space-between; 
       gap: 20px;
 
@@ -296,6 +290,7 @@
     }
 
     &__dot {
+
       width: 5px;
       height: 5px;
       background-color: $color-separator;
